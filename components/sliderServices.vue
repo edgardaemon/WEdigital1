@@ -4,21 +4,21 @@
     <VueSlickCarousel class="sliders" v-bind="settings">
       <div class="d-flex flex-column justify-content-center align-items-center wrapper">
           <h4>Дизайн</h4>
-        <img src="@/assets/images/services1.png" alt="" />
+        <img src="@/assets/images/services1.png" class="img-fluid" alt="" />
       </div>
       <div class="d-flex flex-column justify-content-center align-items-center wrapper">
           <h4>production</h4>
-        <img src="@/assets/images/services2.png" alt="" />
+        <img src="@/assets/images/services2.png" class="img-fluid" alt="" />
       </div>
       <div class="d-flex flex-column justify-content-center align-items-center wrapper">
           <h4>SMM <br>
             Продвижение</h4>
-        <img src="@/assets/images/services3.png" alt="" />
+        <img src="@/assets/images/services3.png" class="img-fluid" alt="" />
       </div>
       <div class="d-flex flex-column justify-content-center align-items-center wrapper">
           <h4>медиа <br>
             обслуживание</h4>
-        <img src="@/assets/images/services4.png" alt="" />
+        <img src="@/assets/images/services4.png" class="img-fluid" alt="" />
       </div>
     
     </VueSlickCarousel>

@@ -5,7 +5,7 @@
         <img src="@/assets/images/golden-slider.png" alt="">
         <h2>GOLDEN HOUSE</h2>
       </div>
-      <div class="d-flex flex-column justify-content-center wrapper non-active" v-if="slick-active" v-bind="classname = {active}">
+      <div class="d-flex flex-column justify-content-center wrapper non-active">
         <img src="@/assets/images/golden-slider.png" alt="">
         <h2>GOLDEN HOUSE</h2>
       </div>

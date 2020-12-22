@@ -12,7 +12,7 @@
         <img src="@/assets/images/samarqand_d.png" class="img-fluid" alt="" />
       </div>
       <div>
-        <img src="@/assets/images/makro_logo.png" class="img-fluid" alt="" />
+        <img src="@/assets/images/makro_logo.svg" class="img-fluid" alt="" />
       </div>
       <div>
         <img src="@/assets/images/mediapark.png" class="img-fluid" alt="" />
@@ -107,11 +107,6 @@ span {
     .slider_logos {
       width: 90%;
       margin-left: 15px;
-    }
-
-    .slider_logos {
-
-     
     }
 }
 </style>

@@ -307,8 +307,8 @@
             </NuxtLink>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-7">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5">
             <p class="text">
               We.Digital - это агентство, состоящее из специалистов в сфере
               диджитал маркетинга с 10-летним опытом работы. Нам важно, с кем мы
@@ -584,6 +584,10 @@ h1 {
 }
 
 @media screen and (max-width: 1200px) {
+  .home_page {
+    height: 65vh;
+  }
+
   .home_page .simple {
     font-size: 70px;
   }
@@ -600,7 +604,10 @@ h1 {
 
 @media screen and (max-width: 991px) {
 
-  
+  .home_page {
+    height: 50vh;
+  }
+
   .home_page .simple {
     font-size: 70px;
   }

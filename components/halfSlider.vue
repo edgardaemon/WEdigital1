@@ -1,26 +1,22 @@
 <template>
 <section>
-    <img src="@/assets/images/linear-gr.png" class="gradient" alt="">
 
     <VueSlickCarousel class="main-slider" id="main-slider" v-bind="settings">
-      
-          
+     <div>
         <img src="@/assets/images/halfslider2.png" class="img-fluid" alt="">
+       </div> 
 
-          
-     
-      
-          
+     <div>
         <img src="@/assets/images/halfslider1.png" class="img-fluid" alt="">
+       </div>     
 
-          
-      
-      
-          
+     <div>
         <img src="@/assets/images/halfslider3.png" class="img-fluid" alt="">
+       </div>     
 
-          
+     <div>
         <img src="@/assets/images/halfslider3.png" class="img-fluid" alt="">
+       </div>     
      
     </VueSlickCarousel>
         
