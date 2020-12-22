@@ -1,0 +1,4 @@
+.sliders.slick-slider.slick-initialized .slick-track.slick-center {
+    display: flex;
+    align-items: center;
+}
