@@ -164,4 +164,10 @@ span {
     color: #FFFFFF;
     opacity: 0.8;
 }
+
+
+@media screen and (max-width: 767px) {
+
+
+}
 </style>

@@ -120,10 +120,17 @@ p {
 @media screen and (max-width: 576px) {
   
 section h1 {
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 100px;
   }
 
+.done .container h2 {
+  font-size: 22px !important;
+}
+
+.done .container h2 svg {
+  width: 35px;
+}
     
 
 }

@@ -1,6 +1,7 @@
 <template>
   <div>
     <section class="home_page">
+          <img src="@/assets/images/gradient_1.png" class="gradient_1" alt="">
       <div class="container">
         <div class="row">
           <div class="col-12 text d-flex">
@@ -10,7 +11,7 @@
                 href=""
                 class="typewrite"
                 data-period="2000"
-                data-type='[ "PROFESSIONAL", "CREATIVE"]'
+                data-type='[ "DIGITAL", "PROFESSIONAL", "POSITIVE","EXCLUSIVE", "CREATIVE"]'
               >
                 <span class="wrap"></span>
               </a>
@@ -437,6 +438,11 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.gradient_1 {
+  position: absolute;
+  width: 99%;
 }
 
 .home_page .typewriter a {

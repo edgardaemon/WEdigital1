@@ -72,7 +72,7 @@ h5 {
   margin-top: 30px;
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 155.9%;
   color: #FFFFFF;
   opacity: 0.8;
@@ -94,7 +94,7 @@ h5 {
   margin-top: 30px;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 155.9%;
   color: #FFFFFF;
   opacity: 0.8;
