@@ -25,7 +25,7 @@
           <div class="col-12 d-flex justify-content-between">
             <div>
               <NuxtLink to="/about-us">
-                <h2>
+                <h2 class="animate__slideInUp">
                   <svg
                     width="64"
                     height="64"

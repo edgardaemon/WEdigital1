@@ -432,7 +432,9 @@ p {
 
 @media screen and (max-width: 576px){
       
-
+.logo {
+  margin-top: 50px;
+}
 
 p {
   color: white;

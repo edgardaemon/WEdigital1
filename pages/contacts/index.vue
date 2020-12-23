@@ -3,28 +3,28 @@
         <div class="container main">
             <div class="row">
                 <div class="col-12 text-center">
-                    <img src="@/assets/images/logo_contacts.png" alt="">
+                    <img src="@/assets/images/logo_contacts.png" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
         <div class="container">
         <div class="row contacts">
-            <div class="offset-1">
+            <div class="offset-md-1">
             </div>
-            <div class="col-10 d-flex justify-content-between">
+            <div class="col-12 col-md-10 d-flex justify-content-between">
                 <div>
                     <h6>Электронная почта</h6>
-                    <p>info@wedigital.uz</p>
+                    <p class="text">info@wedigital.uz</p>
                 </div>
                 <div>
                     <h6>Адрес</h6>
-                    <p>
+                    <p class="text">
                         город Ташкент, Мирзо <br> Улугбекский район, <br> улица Ziyolilar, 1-й дом
                     </p>
                 </div>
                 <div>
                     <h6>Телефон</h6>
-                    <p>+998 99 987 65 43</p>
+                    <p class="text">+998 99 987 65 43</p>
                 </div>
             </div>
         </div>
@@ -162,5 +162,148 @@ form textarea::placeholder {
     line-height: 155.9%;
     color: #FFFFFF;
     opacity: 0.2;
+}
+
+@media screen and (max-width: 991px) {
+.contacts h6 {
+    font-size: 20px;
+    text-align: center;
+}
+
+ img {
+    margin-top: 180px !important;
+}
+
+
+h2 {
+    font-size: 25px;
+}
+
+.row h2 svg {
+    width: 42px;
+}
+
+
+form label {
+    font-size: 22px;
+}
+
+form input::placeholder {
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.contacts h6 {
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contacts p {
+    font-size: 14px !important;
+    margin-bottom: 40px;
+}
+
+ img {
+    margin-top: 130px !important;
+    margin-bottom: 130px!important;
+}
+
+
+.row h2 {
+    font-size: 20px!important;
+}
+
+.row h2 svg {
+    width: 35px;
+}
+
+
+form label {
+    font-size: 15px;
+}
+
+form input::placeholder {
+    font-size: 15px;
+}
+
+form input {
+    height: 40px;
+    padding: 10px;
+}
+
+form textarea::placeholder {
+    font-size: 15px;
+
+}
+
+form input {
+    font-size: 15px;
+}
+
+form textarea {
+    font-size: 15px;
+    padding: 7px;
+    margin-bottom: -100px;
+}
+
+}
+
+@media screen and (max-width: 576px) {
+.contacts h6 {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contacts p {
+    font-size: 10px !important;
+    margin-bottom: 40px;
+}
+
+
+
+ img {
+    margin-top: 130px !important;
+    margin-bottom: 130px!important;
+}
+
+
+.row h2 {
+    font-size: 15px!important;
+}
+
+.row h2 svg {
+    width: 28px;
+}
+
+
+form label {
+    font-size: 9px;
+}
+
+form input::placeholder {
+    font-size: 10px;
+}
+
+form input {
+    height: 25px;
+    padding-top: 5px;
+}
+
+form input {
+    font-size: 10px;
+}
+
+form textarea {
+    font-size: 10px;
+    padding: 7px;
+}
+
+form textarea::placeholder {
+    font-size: 10px;
+
+}
 }
 </style>

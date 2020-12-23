@@ -108,5 +108,11 @@ span {
       width: 90%;
       margin-left: 15px;
     }
+.slider_logos {
+    padding: 30px 0;
+    margin-top: 120px;
+    margin-bottom: 0px;
+}
+
 }
 </style>
