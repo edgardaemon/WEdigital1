@@ -1,34 +1,34 @@
 <template>
   <div class="slider_logos">
       <span>Наши партнеры</span>
-      <img src="@/assets/images/gradient_left.png" class="gradient_left img-fluid" alt="">
+      <img src="@/assets/images/gradient_left.png" class="gradient_left " alt="">
     <VueSlickCarousel class="sliders" v-bind="settings">
-       <div>
-        <img src="@/assets/images/nestle.svg"  class="img-fluid" alt="" />
+       <div class="wrapper">
+        <img src="@/assets/images/nestle.svg"  alt="" />
       </div>
-      <div>
-        <img src="@/assets/images/maraton.svg" class="img-fluid" alt="" />
+      <div class="wrapper">
+        <img src="@/assets/images/maraton.svg" alt="" />
       </div>
-      <div>
-        <img src="@/assets/images/samarqand_d.svg" class="img-fluid" alt="" />
+      <div class="wrapper">
+        <img src="@/assets/images/samarqand_d.svg" alt="" />
       </div>
-      <div>
-        <img src="@/assets/images/makro_logo.svg" class="img-fluid" alt="" />
+      <div class="wrapper">
+        <img src="@/assets/images/makro_logo.svg" alt="" />
       </div>
-      <div>
-        <img src="@/assets/images/mediapark.svg" class="img-fluid" alt="" />
+      <div class="wrapper">
+        <img src="@/assets/images/mediapark.svg" alt="" />
       </div>
-      <div>
-        <img src="@/assets/images/riveira.svg" class="img-fluid" alt="" />
+      <div class="wrapper">
+        <img src="@/assets/images/riveira.svg" alt="" />
       </div>
       
-       <div>
-        <img src="@/assets/images/central-park.svg" class="img-fluid" alt="" />
+       <div class="wrapper">
+        <img src="@/assets/images/central-park.svg" alt="" />
       </div>
 
       
     </VueSlickCarousel>
-      <img src="@/assets/images/gradient_right.png" class="gradient_right img-fluid" alt="">
+      <img src="@/assets/images/gradient_right.png" class="gradient_right " alt="">
   </div>
 </template>
 
@@ -125,11 +125,28 @@ span {
       width: 90%;
       margin-left: 15px;
     }
+
+  .wrapper {
+    box-sizing: border-box;
+    width: 150px;
+  }
+
+
 .slider_logos {
     padding: 30px 0;
     margin-top: 120px;
     margin-bottom: 0px;
 }
 
+.gradient_left {
+      width: 103px;
+    height: 95px;
 }
+.gradient_right {
+      width: 103px;
+    height: 95px;
+}
+}
+
+
 </style>
