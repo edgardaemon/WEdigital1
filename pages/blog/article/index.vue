@@ -157,9 +157,11 @@ section{
 }
 @media screen and (max-width: 767px) {
 
-  .section h1 {
+  section h1 {
     margin-top: 140px;
+    line-height: 40px;
   }
+  
 
  section h1 {
     margin-top: 100px;

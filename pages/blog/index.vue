@@ -45,7 +45,7 @@
                 <div class="col-6 ">
                   
                     <h3>Сейчас – не время для экспериментов</h3>
-                    <p>
+                    <p class="">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor
                     </p>
                     <h4>
@@ -279,11 +279,13 @@
 
 .blog_content {
     background: #2B2B29;
-    width: 556px;
-    height: 211px;
+    /* width: 556px; */
+    /* height: 211px; */
     margin-top: 24px;
     margin-left: 32px;
     padding: 20px 24px 20px 0;
+    width: 90%;
+    height: auto;
 }
 
 .blog_content img {
@@ -301,6 +303,50 @@
 .blog_content:hover img{
    transform: scale(1.1);
   
+}
+
+
+@media screen and (max-width: 576px) {
+    h2 {
+        margin-left: 20px;
+    }
+
+    .blog_content {
+        width: 100%;
+        /* height: auto; */
+        margin-left: 0;
+    }
+
+    .blog_content h3 {
+        font-size: 12px;
+    }
+
+    .blog_content p {
+        box-sizing: border-box;
+        width: 150px;
+        font-size: 12px;
+    }
+
+    .blog_content a h4{
+        font-size: 12px;
+    }
+
+    .blog_content h4  svg {
+        width: 20px;
+    }
+
+    .right_side {
+    margin-left: 0px;
+}
+
+    .blog_content img {
+    position: static;
+    margin-top: 0;
+    margin-left: 0px;
+      transition: 0.5s ease;
+      margin-right: 10px;
+}
+
 }
 
 </style>
