@@ -21,7 +21,7 @@ export default {
 <style scoped>
 .home-enter-active,
 .home-leave-active {
-  transition:  1s;
+  transition:  2s;
 }
 .home-enter,
 .home-leave-active {

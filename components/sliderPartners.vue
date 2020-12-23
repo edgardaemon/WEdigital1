@@ -1,24 +1,25 @@
 <template>
   <div class="slider_logos">
       <span>Наши партнеры</span>
+      <img src="@/assets/images/gradient_left.png" class="gradient_left img-fluid" alt="">
     <VueSlickCarousel class="sliders" v-bind="settings">
        <div>
         <img src="@/assets/images/nestle.svg"  class="img-fluid" alt="" />
       </div>
       <div>
-        <img src="@/assets/images/maraton.png" class="img-fluid" alt="" />
+        <img src="@/assets/images/maraton.svg" class="img-fluid" alt="" />
       </div>
       <div>
-        <img src="@/assets/images/samarqand_d.png" class="img-fluid" alt="" />
+        <img src="@/assets/images/samarqand_d.svg" class="img-fluid" alt="" />
       </div>
       <div>
         <img src="@/assets/images/makro_logo.svg" class="img-fluid" alt="" />
       </div>
       <div>
-        <img src="@/assets/images/mediapark.png" class="img-fluid" alt="" />
+        <img src="@/assets/images/mediapark.svg" class="img-fluid" alt="" />
       </div>
       <div>
-        <img src="@/assets/images/riveira.png" class="img-fluid" alt="" />
+        <img src="@/assets/images/riveira.svg" class="img-fluid" alt="" />
       </div>
       
        <div>
@@ -27,6 +28,7 @@
 
       
     </VueSlickCarousel>
+      <img src="@/assets/images/gradient_right.png" class="gradient_right img-fluid" alt="">
   </div>
 </template>
 
@@ -87,9 +89,24 @@ img {
 }
 
 .slider_logos {
+  position: relative;
     padding: 30px 0;
     margin-top: 120px;
     margin-bottom: 120px;
+}
+
+.gradient_left {
+      top: 66px;
+      position: absolute;
+      z-index: 1;
+      left: -6px;
+}
+
+.gradient_right {
+   position: absolute;
+      z-index: 1;
+      top: 64px;
+    right: -89px;
 }
 
 span {

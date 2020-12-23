@@ -124,5 +124,18 @@ img {
     margin-bottom: 120px;
 }
 
+@media screen and (max-width: 767px) {
+
+  img {
+  margin-right: 130px;
+}
+}
+
+@media screen and (max-width: 500px) {
+
+  img {
+  margin-right: 200px;
+}
+}
 
 </style>

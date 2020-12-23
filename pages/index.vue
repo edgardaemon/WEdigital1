@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="home_page">
-          <img src="@/assets/images/gradient_1.png" class="gradient_1" alt="">
+          <img src="@/assets/images/gradient_1.png" class="gradient_1 text-center" alt="">
       <div class="container">
         <div class="row">
           <div class="col-12 text d-flex">
@@ -442,7 +442,8 @@ body {
 
 .gradient_1 {
   position: absolute;
-  width: 99%;
+  width: 100%;
+  height: 100%s;
 }
 
 .home_page .typewriter a {
