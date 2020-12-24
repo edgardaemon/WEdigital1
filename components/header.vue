@@ -513,11 +513,16 @@ ul li {
   }
 
   .toggled_menu img {
-    width: 140px;
+    width: 110px;
+    margin-left: -60px;
   }
 
   .toggled_menu select {
     width: 90px;
+  }
+
+  .nav_of_toggled_menu svg {
+    width: 25px;
   }
 
   .toggled_menu p {
@@ -529,10 +534,15 @@ ul li {
   }
 
   .toggled_menu h1  {
-    font-size: 45px;
-    margin-top: 0px;
-    margin-bottom: -25px;
+    font-size: 35px;
+    margin-bottom: -45px;
   }
+
+  .toggled_menu_footer {
+    margin-top: 80%;
+  }
+
+  
 
   .toggled_menu .telephone {
     font-size: 15px;

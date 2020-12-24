@@ -47,8 +47,9 @@ export default {
         centerMode: true,
         centerPadding: "20px",
         slidesToShow: 1,
-        slidesToScroll: 1,
         variableWidth: true,
+        "focusOnSelect": true,
+
          "responsive": [
     {
       "breakpoint": 1024,
@@ -62,7 +63,7 @@ export default {
     {
       "breakpoint": 600,
       "settings": {
-        "slidesToShow": 2,
+        "slidesToShow": 3,
         "slidesToScroll": 1,
         "initialSlide": 2
       }
@@ -70,7 +71,7 @@ export default {
     {
       "breakpoint": 480,
       "settings": {
-        "slidesToShow": 2,
+        "slidesToShow": 3,
         "slidesToScroll": 1
       }
     }
@@ -82,10 +83,17 @@ export default {
 </script>
 
 <style scoped>
+
+body {
+   pointer-events: none;
+}
+
 img {
   margin-right: 86px;
   box-sizing: border-box;
   margin-top: 5px;
+   pointer-events: none;
+
 }
 
 .slider_logos {

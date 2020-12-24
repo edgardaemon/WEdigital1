@@ -43,6 +43,8 @@ export default {
   "slidesToShow": 3.5,
   "slidesToScroll": 1,
   "autoplay": false,
+  "focusOnSelect": true,
+
 //   "speed": 10000,
 //   "cssEase": "linear",
 
@@ -58,15 +60,15 @@ export default {
     {
       "breakpoint": 600,
       "settings": {
-        "slidesToShow": 1,
-        "slidesToScroll": 1,
+        "slidesToShow": 3,
+        "slidesToScroll": 3,
         "initialSlide": 2
       }
     },
     {
       "breakpoint": 480,
       "settings": {
-        "slidesToShow": 1,
+        "slidesToShow": 2,
         "slidesToScroll": 1
       }
     }
@@ -81,6 +83,7 @@ export default {
 </script>
 
 <style scoped>
+
 
 .gradient {
   position: absolute;
@@ -116,6 +119,7 @@ img {
   margin-right: 86px;
   box-sizing: border-box;
   margin-top: 5px;
+   pointer-events: none;
 }
 
 .slider_services {
@@ -128,6 +132,17 @@ img {
 
   img {
   margin-right: 130px;
+}
+
+img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+h4 {
+  font-size: 18px;
+  margin-left: 150px;
+  line-height: 25px;
 }
 }
 

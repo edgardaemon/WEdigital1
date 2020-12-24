@@ -36,8 +36,9 @@ export default {
   "infinite": true,
   "slidesToShow": 3,
   "slidesToScroll": 1,
-  "autoplay": true,
-  "speed": 10000,
+  "autoplay": false,
+  "focusOnSelect": true,
+   "centerMode": true,
   "cssEase": "linear",
 
   "responsive": [
@@ -62,7 +63,8 @@ export default {
       "breakpoint": 480,
       "settings": {
         "slidesToShow": 1,
-        "slidesToScroll": 1
+        "slidesToScroll": 1,
+        infinite: true
       }
     }
   ]
@@ -73,42 +75,38 @@ export default {
     };
   },
 };
-// const sliderCards = document.getElementsByClassName('wrapper')
-// const switchSlides = (index) => () => {
-//     const sliderCards = document.getElementsByClassName('wrapper')
-//     for (let i = 0; i < sliderCards.length; i++) {
-//         sliderCards[i].classList.remove('active')
-//     }
-//     sliderCards[index].classList.add('non-active')
-// }
-
-// for (let i = 0; i < sliderCards.length; i++) {
-//     sliderCards[i].addEventListener('click', switchSlides(i))
-// }
 
 
 </script>
 
 <style scoped>
 
-.gradient {
-  position: absolute;
-  z-index: 19;
-  width: 99%;
+section {
+  height: 100%;
+}
+
+.slick-track.slick-center[data-v-e4caeaf8] {
+  display: flex !important;
+  align-items: center !important;
 }
 
 .non-active h2 {
-  margin-left: -70px;
+  margin-left: 45px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 117px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .non-active {
   justify-content: center;
   align-items: center;
    margin-right: 67px;
-}
-
-.non-active h2 {
-  display: none !important;
 }
 
 .non-active img{
@@ -119,6 +117,7 @@ export default {
 
 .non-active {
   margin-top: 110px;
+  opacity: 0.5;
 }
 
 
@@ -154,6 +153,28 @@ img {
     margin-bottom: 120px;
 }
 
+.slider_portfolio .wrapper{
+  transition: all 0.5s;
+  pointer-events: none;
+}
+
+.slider_portfolio h2{
+  transition: all 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slick-current .wrapper {
+  transform: scale(1.6);
+  width: 695px;
+  height: 495px;
+  opacity: 1;
+}
+
+.slick-current h2 {
+  opacity: 1;
+}
+
 span {
     margin-top: 64px;
     font-style: normal;
@@ -168,6 +189,14 @@ span {
 
 @media screen and (max-width: 767px) {
 
+img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+h2 {
+  font-size: 22px !important;
+}
 
 }
 </style>
