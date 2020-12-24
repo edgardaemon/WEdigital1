@@ -539,7 +539,7 @@ ul li {
   }
 
   .toggled_menu_footer {
-    margin-top: 80%;
+    margin-top: 300px;
   }
 
   
