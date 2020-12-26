@@ -36,7 +36,6 @@ export default  {
 
 <style scoped >
 body {
-  background: #141311 !important;
    font-family: "Montserrat";
 }
 

@@ -45,25 +45,31 @@ export default {
     {
       "breakpoint": 1024,
       "settings": {
-        "slidesToShow": 2,
+        "slidesToShow": 3,
         "slidesToScroll": 2,
         "infinite": true,
+         "focusOnSelect": true,
+   "centerMode": true,
         "dots": true
       }
     },
     {
       "breakpoint": 600,
       "settings": {
-        "slidesToShow": 1,
+        "slidesToShow": 1.1,
         "slidesToScroll": 1,
+         "focusOnSelect": true,
+   "centerMode": true,
         "initialSlide": 2
       }
     },
     {
       "breakpoint": 480,
       "settings": {
-        "slidesToShow": 1,
+        "slidesToShow": 1.1,
         "slidesToScroll": 1,
+         "focusOnSelect": true,
+   "centerMode": true, 
         infinite: true
       }
     }
@@ -85,10 +91,6 @@ section {
   height: 100%;
 }
 
-.slick-track.slick-center[data-v-e4caeaf8] {
-  display: flex !important;
-  align-items: center !important;
-}
 
 .non-active h2 {
   margin-left: 45px;
@@ -117,12 +119,11 @@ section {
 
 .non-active {
   margin-top: 110px;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 
 .slider_portfolio{
-  padding-top: 78px;
   margin-bottom: 120px;
 }
 
@@ -147,11 +148,6 @@ img {
   box-sizing: border-box;
 }
 
-.slider_logos {
-    padding: 30px 0;
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
 
 .slider_portfolio .wrapper{
   transition: all 0.5s;
@@ -195,8 +191,22 @@ img {
 }
 
 h2 {
-  font-size: 22px !important;
+  font-size: 25px !important;
+}
+
+.slider_portfolio {
+  margin-top: -133px;
+  margin-bottom: 0;
 }
 
 }
+
+
+@media screen and (max-width: 576px) {
+h2 {
+  font-size: 20px !important;
+  /* margin-right: 10px; */
+}
+}
+
 </style>

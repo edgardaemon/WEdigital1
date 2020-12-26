@@ -61,7 +61,6 @@ export default {
 
 img {
     width: 708px;
-    height: 335px;
    pointer-events: none;
    opacity: 0.5;
   transition: 1s all;

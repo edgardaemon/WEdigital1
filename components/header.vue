@@ -202,7 +202,7 @@
         </div>
       </div>
     </div>
-    <div class="top_menu">
+    <div class="top_menu" id="top_menu">
       <div class="container">
         <div
           class="row navbar justify-content-between align-items-center"
@@ -288,6 +288,17 @@ export default {
     sidebar: false,
   }),
 };
+
+window.onscroll = function() {scroolBoxShadow()};
+
+function scroolBoxShadow() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("top_menu").className = "top_menu-box-shadow";
+    } 
+    else {
+        document.getElementById("top_menu").classList.toggle = "";
+    }
+}
 </script>
 
 
@@ -295,13 +306,25 @@ export default {
 * {
   box-sizing: border-box;
   font-family: "Montserrat";
+  
 }
+
+.top_menu-box-shadow {
+  transition: 0.5s all;
+  position: fixed;
+  z-index: 19;
+  width: 100%;
+  background: #141414;
+filter: drop-shadow(0px 4px 32px rgba(255, 255, 255, 0.04));
+}
+
+
 
 .top_menu {
   position: fixed;
   z-index: 19;
   width: 100%;
-  background: #141311;
+  background: #141414;
 }
 
 select {

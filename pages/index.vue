@@ -1,21 +1,11 @@
 <template>
   <div>
     <section class="home_page">
-          <img src="@/assets/images/gradient_1.png" class="gradient_1 text-center" alt="">
       <div class="container">
         <div class="row">
-          <div class="col-12 text d-flex">
-            <h1 class="simple">WE</h1>
-            <h1 class="typewriter">
-              <a
-                href=""
-                class="typewrite"
-                data-period="2000"
-                data-type='[ "DIGITAL", "PROFESSIONAL", "POSITIVE","EXCLUSIVE", "CREATIVE"]'
-              >
-                <span class="wrap"></span>
-              </a>
-            </h1>
+          <div class="col-12 text">
+           <h1>Делаем жизнь наших клиентов проще</h1>
+           <h3>We.Digital - маркетинговое агенство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы.</h3>
           </div>
         </div>
       </div>
@@ -414,9 +404,29 @@ export default {
 <style>
 body {
   color: white;
-  background: #141311 !important;
+  background: #141414 !important;
   font-family: "Montserrat";
 }
+
+.home_page h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 66px;
+  line-height: 150% !important;
+  color: #FFFFFF;
+  margin-top:361px;
+  margin-bottom: 100px;
+  }
+
+  .home_page h3 {
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 150%;
+color: #FFFFFF;
+opacity: 0.8;
+  }
+
 
 .half-page-slider {
   width: 150%;
@@ -427,45 +437,6 @@ body {
   background-image: url(~assets/images/home.png);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.home_page .simple {
-  font-weight: 800;
-  font-size: 96px;
-  line-height: 117px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.gradient_1 {
-  position: absolute;
-  width: 100%;
-  height: 100%s;
-}
-
-.home_page .typewriter a {
-  font-weight: 800;
-  font-size: 96px;
-  line-height: 117px;
-  display: flex;
-  align-items: center;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white !important;
-  margin-left: 40px;
-}
-
-.home_page .typewriter a:hover {
-  text-decoration: none;
-  -webkit-text-fill-color: white;
-}
-
-.text h1 {
-  vertical-align: center;
-  margin-top: 33.3%;
 }
 
 a h2 {
@@ -591,16 +562,18 @@ h1 {
 }
 
 @media screen and (max-width: 1200px) {
-  .home_page {
-    height: 65vh;
+ .home_page {
+   height: 80vh;
+ }
+ 
+ .home_page h1 {
+  font-size: 56px;
+  margin-top: 20%;
+  margin-bottom: 22px;
   }
 
-  .home_page .simple {
-    font-size: 70px;
-  }
-
-  .home_page .typewriter a {
-    font-size: 70px;
+  .home_page h3 {
+font-size: 20px;
   }
 
   .number_of_projects h6 {
@@ -611,21 +584,24 @@ h1 {
 
 @media screen and (max-width: 991px) {
 
-  .home_page {
-    height: 50vh;
+.home_page {
+   height: 70vh;
+ }
+
+ .home_page h1 {
+  font-size: 46px;
+  margin-top: 22%;
+  margin-bottom: 35px;
   }
 
-  .home_page .simple {
-    font-size: 70px;
+  .home_page h3 {
+  font-size: 18px;
   }
 
   .more {
     margin-top: 15px;
   }
 
-  .home_page .typewriter a {
-    font-size: 70px;
-  }
 
   .number_of_projects h6 {
     font-size: 16px;
@@ -645,24 +621,26 @@ h1 {
 }
 
 @media screen and (max-width: 767px) {
-  .home_page {
-      height: 50vh;
-    }
-  .home_page h1 {
-    margin-top: 140px;
+
+
+.home_page {
+  height: 50vh;
+}
+ .home_page h1 {
+  font-size: 40px;
+  margin-top: 23%;
+  margin-bottom: 20px;
   }
 
-  .home_page .simple {
-    font-size: 50px;
+  .home_page h3 {
+  font-size: 14px;
   }
-  
+
   .more {
     margin-top: 15px;
   }
 
-  .home_page .typewriter a {
-    font-size: 50px;
-  }
+
 
   .number_of_projects h6 {
     font-size: 16px;
@@ -682,8 +660,21 @@ h1 {
 }
 
 @media screen and (max-width: 576px) {
+
+
+  .home_page h1 {
+  font-size: 28px;
+  line-height: 35px;
+  margin-top: 250px;
+  margin-bottom: 10px;
+  }
+
+  .home_page h3 {
+  font-size: 9px;
+  }
+
   .home_page {
-    height: 32vh;
+    height: 28vh;
   }
 
   .about h1 {

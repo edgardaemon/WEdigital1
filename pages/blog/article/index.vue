@@ -108,7 +108,7 @@ section{
     font-weight: 400;
     font-size: 24px;
     line-height: 155.9%;
-    text-align: justify;
+    text-align: left;
     color: #FFFFFF;
     opacity: 0.5;
 }
