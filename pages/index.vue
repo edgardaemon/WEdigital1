@@ -16,30 +16,9 @@
           <div class="col-12 d-flex justify-content-between">
             <div>
               <NuxtLink to="/about-us">
-                <h2 class="animate__slideInUp">
-                  <svg
-                    width="64"
-                    height="64"
-                    viewBox="0 0 64 64"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 32H56M8 16H30"
-                      stroke="white"
-                      stroke-width="4"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M8 48H45.5"
-                      stroke="white"
-                      stroke-width="4"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                    /></svg
-                  >&nbsp; О нас
-                </h2>
+                <div>
+                <img src="@/assets/images/about.svg" alt="">
+                </div>
               </NuxtLink>
             </div>
             <div>
@@ -70,7 +49,7 @@
             <h1>ПОЧЕМУ МЫ?</h1>
           </div>
           <div class="col-12 col-md-6">
-            <p class="text">
+            <p class="text text-left">
               We.Digital - это агентство, состоящее из специалистов в сфере
               диджитал маркетинга с 10-летним опытом работы. Нам важно, с кем мы
               работаем, важно, какие у всех нас цели и принципы. Мы не просто
@@ -123,34 +102,9 @@
       <div class="container">
         <div class="row">
           <div class="col-12 d-flex justify-content-between">
-            <div>
-              <NuxtLink to="/portfolio">
-                <h2>
-                  <svg
-                    width="64"
-                    height="64"
-                    viewBox="0 0 64 64"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 32H56M8 16H30"
-                      stroke="white"
-                      stroke-width="4"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M8 48H45.5"
-                      stroke="white"
-                      stroke-width="4"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                    /></svg
-                  >&nbsp; Портфолио
-                </h2>
-              </NuxtLink>
-            </div>
+          <div>
+                <img src="@/assets/images/portfolio.svg" alt="">
+                </div>
             <div>
               <NuxtLink to="/portfolio">
                 <h2 class="more">
@@ -196,34 +150,9 @@
       <div class="container">
         <div class="row">
           <div class="col-12 d-flex justify-content-between">
-            <div>
-              <NuxtLink to="/services">
-                <h2>
-                  <svg
-                    width="64"
-                    height="64"
-                    viewBox="0 0 64 64"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8 32H56M8 16H30"
-                      stroke="white"
-                      stroke-width="4"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M8 48H45.5"
-                      stroke="white"
-                      stroke-width="4"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                    /></svg
-                  >&nbsp; Наши услуги
-                </h2>
-              </NuxtLink>
-            </div>
+           <div>
+                <img src="@/assets/images/services.svg" alt="">
+                </div>
             <div>
               <NuxtLink to="/services">
                 <h2 class="more">
@@ -250,51 +179,28 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
-          <slider-services />
-      </div>
       <div class="container">
         <div class="row">
-          <div class="col-12 d-flex flex-column align-items-center">
-            <h5>
-              Это еще не все
-             <img src="@/assets/images/hug_me.svg" alt="">
-            </h5>
-            <div class="line"></div>
-          </div>
-        </div>
+        <div class="offset-1"></div>
+        <div class="col-10">
+        <services-accordion
+      v-for="(course, index) in courses" v-bind:key="course.index"
+      :index="index + 1"
+      :title="course.name"
+      :list="course.themes"
+    />
       </div>
+      </div>
+     </div>
     </section>
     <section class="team">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <NuxtLink to="/team">
-              <h2>
-                <svg
-                  width="64"
-                  height="64"
-                  viewBox="0 0 64 64"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 32H56M8 16H30"
-                    stroke="white"
-                    stroke-width="4"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M8 48H45.5"
-                    stroke="white"
-                    stroke-width="4"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                  />
-                </svg>
-                &nbsp;Наше команда
-              </h2>
+             <div>
+                <img src="@/assets/images/team.svg" alt="">
+                </div>
             </NuxtLink>
           </div>
         </div>
@@ -327,79 +233,65 @@
 </template>
 
 <script>
+export default {
+ data: () => ({
+    courses: [
+      {
+        name: "Маркетинг в социальных сетях",
+        index: "1",
+        themes: [
+          "Simmetriya va asimmetriya",
+          "O‘lchovlar",
+          "Hoshiya",
+          "Lerarxiya",
+          "Panjara",
+          "Barchasi birda"
+        ]
+      },
+      {
+        name: "Разработка рекламных компаниий",
+        index: "2",
+        themes: ["Simmetriya va asimmetriya", "O‘lchovlar", "Barchasi birda"]
+      }, {
+        name: "Маркетинговые исследования",
+        index: "3",
+        themes: ["Simmetriya va asimmetriya", "O‘lchovlar", "Barchasi birda"]
+      }, {
+        name: "Брендинг и дизайн",
+        index: "4",
+        themes: ["Simmetriya va asimmetriya", "O‘lchovlar", "Barchasi birda"]
+      }, {
+        name: "Influence marketing",
+        index: "5",
+        themes: ["Simmetriya va asimmetriya", "O‘lchovlar", "Barchasi birda"]
+      }, {
+        name: "Production",
+        index: "6",
+        themes: ["Simmetriya va asimmetriya", "O‘lchovlar", "Barchasi birda"]
+      }, {
+        name: "Медиаобслуживание",
+        index: "7",
+        themes: ["Simmetriya va asimmetriya", "O‘lchovlar", "Barchasi birda"]
+      }, {
+        name: "Координация работы маркетинга на аутсорс",
+        index: "8",
+        themes: ["Simmetriya va asimmetriya", "O‘lchovlar", "Barchasi birda"]
+      }
+    ]
+  })
+  }
 import buttons from "~/components/buttons";
 import sliderPartners from "~/components/sliderPartners";
 import sliderPortfolio from '@/components/sliderPortfolio';
-import sliderServices from '@/components/sliderServices';
+import servicesAccordion from '@/components/servicesAccordion';
 import halfSlider from '@/components/halfSlider';
 
 
 
-
-var TxtType = function (el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = "";
-  this.tick();
-  this.isDeleting = false;
-};
-
-TxtType.prototype.tick = function () {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
-
-  var that = this;
-  var delta = 200 - Math.random() * 100;
-
-  if (this.isDeleting) {
-    delta /= 2;
-  }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === "") {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function () {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function () {
-  var elements = document.getElementsByClassName("typewrite");
-  for (var i = 0; i < elements.length; i++) {
-    var toRotate = elements[i].getAttribute("data-type");
-    var period = elements[i].getAttribute("data-period");
-    if (toRotate) {
-      new TxtType(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-  document.body.appendChild(css);
-
+</script>
   
 };
 
-export default {
-  components: { sliderPortfolio },};
-</script>
 
 <style>
 body {
@@ -478,8 +370,12 @@ a:hover {
   padding-top: 64px;
 }
 
+.services .more {
+  margin-bottom: 87px;
+}
+
 .team {
-  padding-top: 64px;
+  padding-top: 126px;
 }
 
 h1 {

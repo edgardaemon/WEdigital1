@@ -76,7 +76,7 @@
 
 
 body {
-  background: #141311 !important;
+  background: #141414;
   font-family: "Montserrat";
 }
 

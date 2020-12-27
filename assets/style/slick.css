@@ -8,4 +8,6 @@
     align-items: center !important;
   }
   
- 
+body {
+    background: #141414;
+}

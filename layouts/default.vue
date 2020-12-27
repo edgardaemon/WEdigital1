@@ -27,4 +27,6 @@ export default {
 .home-leave-active {
   opacity: 0;
 }
+
+
 </style>

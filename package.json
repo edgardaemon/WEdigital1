@@ -17,7 +17,12 @@
     "nuxt": "^2.14.6",
     "vue": "^2.6.12",
     "vue-scrollto": "^2.20.0",
-    "vue-slick-carousel": "^1.0.6"
+    "vue-slick-carousel": "^1.0.6",
+    "vue-slide-toggle": "^1.1.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0"
+  }
 }

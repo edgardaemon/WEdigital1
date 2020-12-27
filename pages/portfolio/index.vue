@@ -1,15 +1,6 @@
 <template>
     <div>
         <section>
-        <div class="container">
-          <div class="row">
-                <div class="col-12 text-center">
-                     <h1 class="head_text">
-                            Наше <span class="web-kit">  портфолио</span>
-                    </h1>
-                </div>
-            </div>
-            </div>
                <div class="container-fluid slider">
         <slider-portfolio />
       </div>
@@ -48,14 +39,7 @@
 
 <style scoped>
 .slider {
-    margin-top: -220px;
-}
-
-
-
-section h1 {
-    margin-top: 220px;
-    margin-bottom: 180px;
+    padding-top: 100px;
 }
 
 .done {
@@ -99,30 +83,20 @@ p {
     margin-top: 150px;
 }
 @media screen and (max-width: 767px) {
-
-  .section h1 {
-    margin-top: 140px;
-  }
-
- section h1 {
-    margin-top: 100px;
-    font-size: 43px;
-  }
+.slider {
+    padding-top: 10px;
+}
 
   p {
     font-size: 19px;
   }
   .done {
-    margin-top: 150px;
+    margin-top: 0px;
 }
 }
 
 @media screen and (max-width: 576px) {
   
-section h1 {
-    font-size: 30px;
-    margin-top: 100px;
-  }
 
 .done .container h2 {
   font-size: 22px !important;

@@ -310,6 +310,7 @@ function scroolBoxShadow() {
 }
 
 .top_menu-box-shadow {
+  background: #141414 !important;
   transition: 0.5s all;
   position: fixed;
   z-index: 19;

@@ -2,26 +2,42 @@
     <div>
       <div class="container">
         <div class="row">
-          <div class="col-12 text-center">
-      <h1>
-        О <span class="web-kit">НАС</span>
-      </h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h2>
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 32H56M8 16H30" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M8 48H45.5" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
-</svg>&nbsp; 
-Наша деятельность в изображениях
-            </h2>
+          <div class="col-12 ">
+            <img src="@/assets/images/about.svg" alt="">
           </div>
         </div>
       </div>
         <div class="container-fluid">
         <slider-portfolio />
+      </div>
+      <div class="container article">
+        <div class="row">
+          <div class="col-12">
+          <p class="text">
+            We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+          </p>
+          <div class="text-center">
+          <img src="@/assets/images/article2.png"  class="img-fluid" alt="">
+          </div>
+          <p class="text">
+            We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+               <br><br>
+            We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+              culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        </div>
       </div>
        <div class="container">
     <slider-partners />
@@ -39,56 +55,35 @@ body {
    font-family: "Montserrat";
 }
 
-h1 {
- margin-top: 230px;
-  margin-bottom: 120px;
-  font-weight: 800;
-  font-size: 96px;
-  line-height: 117px;
-  color: white;
-  text-transform: uppercase;
+img{
+ margin-top: 197px;
+  margin-bottom: 0px;
 }
 
-.web-kit {
- 
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white !important;
+.article img {
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
-.web-kit:hover {
-  text-decoration: none;
-  -webkit-text-fill-color: white;
-}
-
-h2 {
-  font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 39px;
+.article p {
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 155.9%;
 color: #FFFFFF;
+opacity: 0.5;
 }
+
 
 @media screen and (max-width: 567px)  {
-    h1 {
-      font-size: 65px !important;
+    img{
         margin-top: 70px;
-        margin-bottom: 70px;
+        margin-bottom: 0px;
     }
 
-    .list-of-services h1 {
+    .list-of-services img{
         font-size: 20px;
-    }
-    h2 {
-    font-size: 18px !important;
-    margin-bottom: -200px;
-    line-height: 18px;
-    }
 
-    h2 svg {
-      width: 30px;
-    }
-
-}
+}}
 
 </style>
