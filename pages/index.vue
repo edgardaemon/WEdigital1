@@ -18,7 +18,7 @@
             <div>
               <NuxtLink to="about-us">
                 <div>
-                <img src="@/assets/images/about.svg" alt="">
+                <img src="@/assets/images/about.svg" class="img-fluid" alt="">
                 </div>
               </NuxtLink>
             </div>
@@ -104,7 +104,7 @@
         <div class="row">
           <div class="col-12 d-flex justify-content-between">
           <div>
-                <img src="@/assets/images/portfolio.svg" alt="">
+                <img src="@/assets/images/portfolio.svg" class="img-fluid" alt="">
                 </div>
             <div>
               <NuxtLink to="/portfolio">
@@ -152,7 +152,7 @@
         <div class="row">
           <div class="col-12 d-flex justify-content-between">
            <div>
-                <img src="@/assets/images/services.svg" alt="">
+                <img src="@/assets/images/services.svg" class="img-fluid" alt="">
                 </div>
             <div>
               <NuxtLink to="/services">
@@ -200,7 +200,7 @@
           <div class="col-12">
             <NuxtLink to="/team">
              <div>
-                <img src="@/assets/images/team.svg" alt="">
+                <img src="@/assets/images/team.svg" class="img-fluid" alt="">
                 </div>
             </NuxtLink>
           </div>
