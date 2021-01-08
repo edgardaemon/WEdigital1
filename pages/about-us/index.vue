@@ -84,6 +84,10 @@ opacity: 0.5;
     .list-of-services img{
         font-size: 20px;
 
-}}
+}
+.article p {
+  font-size: 1rem;
+}
+}
 
 </style>

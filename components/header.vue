@@ -517,6 +517,7 @@ ul li {
 .tel */
 
 @media screen and (max-width: 1200px) {
+  
   .text_links {
     display: none !important;
   }

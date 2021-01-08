@@ -140,7 +140,7 @@ section {
   margin-left: 45px;
   font-style: normal;
   font-weight: 800;
-  font-size: 50px;
+  font-size: 45px;
   line-height: 117px;
   display: flex;
   align-items: center;
@@ -219,7 +219,7 @@ span {
     margin-top: 64px;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    /* font-size: 24px; */
     line-height: 155.9%;
     text-align: justify;
     color: #FFFFFF;
@@ -230,11 +230,48 @@ span {
   margin-left: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 30px!important;
+  }
+}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
+  h2 {
+  font-size: 14px !important;
+}
+
+.slick-current .wrapper {
+  transform: scale(1.6);
+  width: 100%;
+  height: 256px;
+  opacity: 1;
+}
+
+.non-active img{
+  width: 100%;
+  height: auto;
+  padding-left: 0px;
+}
+}
 
 
+@media screen and (max-width: 768px) {
+
+.slick-current .wrapper {
+  transform: scale(1.2);
+  width: 100%;
+  height: 500px;
+  opacity: 1;
+}
+
+.non-active img{
+  width: 100%;
+  height: auto;
+  padding-left: 50px;
+}
 h2 {
+  margin-left: 120px !important;
   font-size: 25px !important;
 }
 
@@ -255,8 +292,25 @@ h2 {
 
 @media screen and (max-width: 576px) {
 h2 {
-  font-size: 14px !important;
-  /* margin-right: 10px; */
+  font-size: 15px !important;
+  margin-left: 60px !important;
+}
+
+.slick-current .wrapper {
+  transform: scale(1.2);
+  width: 100%;
+  height: 300px;
+  opacity: 1;
+}
+
+.arrows {
+  display: none;
+}
+
+.non-active img{
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
 }
 }
 
