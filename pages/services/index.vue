@@ -2,21 +2,11 @@
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                     <h1 class="head_text">
-                            Наши <span class="web-kit">  услуги</span>
-                    </h1>
+                <div class="col-12 services">
+                    <img src="@/assets/images/services.svg"  alt="">
                 </div>
             </div>
-            <div class="row">
-                <h2>
-                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 32H56M8 16H30" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
-<path d="M8 48H45.5" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
-</svg> &nbsp; 
-Наши услуги
-                </h2>
-            </div>
+           
             <div class="row list-of-services">
                 <div class="col-2">
                     <img class="img-fluid" src="@/assets/images/graphic.png" alt="">
@@ -80,35 +70,11 @@ body {
   font-family: "Montserrat";
 }
 
-.head_text  {
- margin-top: 230px;
-  margin-bottom: 120px;
-  font-weight: 800;
-  font-size: 96px;
-  line-height: 117px;
-  color: white;
-   text-transform: uppercase;
+.services {
+    padding-top: 230px;
+    padding-bottom: 64px;
 }
 
-.web-kit {
- 
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white !important;
-}
-
-.web-kit:hover {
-  text-decoration: none;
-  -webkit-text-fill-color: white;
-}
-
-h2 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
-    color: #FFFFFF;
-}
 
 .list-of-services h1 {
     margin-top: 65px;
@@ -152,6 +118,10 @@ h2 {
 
    .head_text  {
   font-size: 60px;
+}
+
+.services {
+    padding-top: 150px;
 }
 
 .list-of-services img {

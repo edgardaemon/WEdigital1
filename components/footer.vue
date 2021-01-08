@@ -3,7 +3,9 @@
     <div class="container ">
       <div class="row">
         <div class="col-12 col-md-8 logo">
+          <NuxtLink to="/">
          <img src="@/assets/images/footer_logo.png" class="img-fluid" alt="">
+          </NuxtLink>
          <p class="wedigital">© 2020 WeDigital</p>
         </div>
       
@@ -214,6 +216,11 @@
 * {
   font-family: "Montserrat";
 }
+
+a {
+  transition: all 0.4s;
+}
+
 .logo {
   padding: 3% 0 4% 0;
 }
@@ -230,9 +237,21 @@ p {
   line-height: 155.9%;
 }
 
+.social_sites svg {
+  cursor: pointer;
+  transition: all 0.4s;
+
+}
+.social_sites svg path {
+  cursor: pointer;
+  transition: all 0.4s;
+
+}
+
 
 .socials svg {
   margin-left: 20px;
+  
 }
 
 
@@ -242,6 +261,8 @@ p {
 
 .footer_socials .socials:hover .uic_text{
   opacity: 1;
+  transition: all 0.4s;
+  cursor: pointer;
 }
 
 .uic {

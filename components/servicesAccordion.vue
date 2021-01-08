@@ -97,12 +97,16 @@ export default {
   }
 
   &__title {
-   font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 155.9%;
-    color: #FFFFFF;
-    opacity: 0.8;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 155.9%;
+  color: #FFFFFF;
+
+  &:hover {
+    -webkit-text-stroke: 0.5px white;
+    -webkit-text-fill-color: transparent;
+  }
   }
 
   &__body {
@@ -134,6 +138,8 @@ export default {
     }
   }
 }
+
+
 
 @media screen and (max-width: 991px) {
     div .accordion {

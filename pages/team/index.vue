@@ -2,36 +2,9 @@
   <div>
     <div class="container">
       <div class="row">
-        <div class="col-12 text-center">
-          <h1 class="head_text">Наша <span class="web-kit"> команда</span></h1>
+        <div class="col-12 team">
+          <img src="@/assets/images/team1.svg" alt="">
         </div>
-      </div>
-      <div class="row">
-        <h2>
-          <svg
-            width="64"
-            height="64"
-            viewBox="0 0 64 64"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M8 32H56M8 16H30"
-              stroke="white"
-              stroke-width="4"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-            />
-            <path
-              d="M8 48H45.5"
-              stroke="white"
-              stroke-width="4"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-            />
-          </svg>
-          &nbsp; Наша Команда
-        </h2>
       </div>
     </div>
 
@@ -39,7 +12,7 @@
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <img src="@/assets/images/art.png" alt="" />
+            <img src="@/assets/images/smm.png" class="img-fluid" alt="" />
           </div>
           <div class="col-6">
             <h2>Пулатов джасурбек</h2>
@@ -157,7 +130,7 @@
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <img src="@/assets/images/smm.png" alt="" />
+            <img src="@/assets/images/smm.png" class="img-fluid" alt="" />
           </div>
           <div class="col-6">
             <h2>аманов машраб</h2>
@@ -275,10 +248,10 @@
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <img src="@/assets/images/smm2.png" alt="" />
+            <img src="@/assets/images/smm.png" class="img-fluid" alt="" />
           </div>
           <div class="col-6">
-            <h2>мухаммаджон машрабов</h2>
+            <h2>Пулатов джасурбек</h2>
             <span class="job">СММ менеджер</span>
           </div>
           <div class="col-3 socials text-right">
@@ -393,7 +366,7 @@
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <img src="@/assets/images/art.png" alt="" />
+            <img src="@/assets/images/smm.png" class="img-fluid" alt="" />
           </div>
           <div class="col-6">
             <h2>Пулатов джасурбек</h2>
@@ -511,7 +484,7 @@
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <img src="@/assets/images/smm.png" alt="" />
+            <img src="@/assets/images/smm.png" class="img-fluid" alt="" />
           </div>
           <div class="col-6">
             <h2>аманов машраб</h2>
@@ -629,10 +602,10 @@
       <div class="container">
         <div class="row">
           <div class="col-3">
-            <img src="@/assets/images/smm2.png" alt="" />
+            <img src="@/assets/images/smm.png" class="img-fluid" alt="" />
           </div>
           <div class="col-6">
-            <h2>мухаммаджон машрабов</h2>
+            <h2>Пулатов джасурбек</h2>
             <span class="job">СММ менеджер</span>
           </div>
           <div class="col-3 socials text-right">
@@ -749,14 +722,19 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+.team {
+  padding-top: 230px;
+  padding-bottom: 64px;
+}
+
 .slide_logo {
   margin-top: 120px;
 }
 
 .team-members h2 {
   font-style: normal;
-  font-weight: 800;
+  font-weight: 750;
   font-size: 32px;
   line-height: 39px;
   display: flex;
@@ -783,10 +761,11 @@
   background: #1d1d1d;
   height: 128px;
   margin-top: 100px;
+
 }
 
 .team-members img {
-  margin-top: -36px;
+  margin-top: -22px;
 }
 
 .team-members .col-3 {
@@ -796,17 +775,125 @@
 .team-members svg {
   margin-top: 51px;
   margin-left: 32px;
+  
 }
 
 .team-members .socials {
-  display: none;
+  opacity: 0;
 }
 
 .team-members:hover .socials {
-  display: block;
+  opacity: 1;
+
+}
+
+.socials svg path {
+  transition: 0.5s all;
+
 }
 
 .socials svg:hover path {
   fill: #81007f;
+
+}
+
+@media screen and (max-width: 1200px) {
+  .team-members{
+    img {
+      margin-top: -10px;
+    }
+
+    svg {
+      margin-left: 20px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .team-members{
+    height: 100px;
+    margin-top: 70px;
+
+    img {
+      margin-top: -5px;
+    }
+
+    h2 {
+      margin-top: 5px;
+      font-size: 25px;
+    }
+
+    .job {
+      font-size: 18px;
+    }
+
+    svg {
+      margin-left: 5px;
+    }
+}
+}
+
+@media screen and (max-width: 768px) {
+  .team {
+    padding-top: 120px;
+    padding-bottom: 32px;
+  }
+
+  .team-members{
+    height: 70px;
+    margin-top: 50px;
+
+    img {
+      margin-top: -7px;
+    }
+
+    h2 {
+      margin-top: 0px;
+      margin-left: 5px;
+      margin-bottom: 0px;
+      font-size: 18px;
+    }
+
+    .job {
+      font-size: 18px;
+      margin-left: 5px;
+    }
+
+    svg {
+      margin-top: 22px;
+      width: 18px;
+      margin-left: 5px;
+    }
+}
+}
+
+@media screen and (max-width: 576px) {
+   .team-members{
+    height: 50px;
+    margin-top: 50px;
+
+    img {
+      margin-top: -2px;
+    }
+
+    h2 {
+      margin-top: -3px;
+      margin-left: 5px;
+      margin-bottom: -14px;
+      font-size: 12px;
+    }
+
+    .job {
+      font-size: 12px;
+      margin-left: 5px;
+    }
+
+    svg {
+      margin-top: 12px;
+      width: 12px;
+      margin-left: 5px;
+    }
+}
 }
 </style>

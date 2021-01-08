@@ -1,3 +1,8 @@
+import ru from "./locales/ru.json"
+import en from "./locales/en.json"
+import uz from "./locales/uz.json"
+
+
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
@@ -12,7 +17,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap' }
     ]
   },
 
@@ -20,7 +25,7 @@ export default {
   css: [
     '@/node_modules/bootstrap/dist/css/bootstrap.min.css',
     "~/assets/style/slick",
-  
+
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -39,10 +44,27 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     'vue-scrollto/nuxt',
- 
-        // Or if you have custom options...
+
+    // Or if you have custom options...
     ['vue-scrollto/nuxt', { duration: 300 }],
+    'nuxt-i18n',
   ],
+
+  i18n: {
+    detectBrowserLanguage: false,
+    strategy: 'prefix',
+    lazy: true,
+    locales: ['uz', 'ru', 'en'],
+    defaultLocale: 'ru',
+    vueI18n: {
+      fallbackLocale: 'ru',
+      messages: {
+        uz,
+        ru,
+        en,
+      },
+    },
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},

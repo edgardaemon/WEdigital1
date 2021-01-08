@@ -9,6 +9,7 @@
           <div class="row justify-content-between nav_of_toggled_menu">
             <div>
               <svg
+               class="lang"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -30,7 +31,7 @@
                 </defs>
               </svg>
 
-              &nbsp;<select name="languages" id="languages" >
+              <select name="languages" id="languages" >
                 <option value="Русский">Русский</option>
                 <option value="O‘zbekcha">O‘zbekcha</option>
                 <option value="English">English</option>
@@ -309,6 +310,11 @@ function scroolBoxShadow() {
   
 }
 
+.menu {
+  min-height: 500px;
+
+}
+
 .top_menu-box-shadow {
   background: #141414 !important;
   transition: 0.5s all;
@@ -344,6 +350,8 @@ select option {
 
 a {
   color: white;
+  transition: all 0.4s;
+
 }
 
 a:hover {
@@ -522,6 +530,12 @@ ul li {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .toggled_menu {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .text {
     font-size: 16px;
@@ -532,17 +546,23 @@ ul li {
 @media screen and (max-width: 576px) {
   .toggled_menu {
     height: 80vh;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 99%;
   }
 
   .toggled_menu img {
-    width: 110px;
+    width: 100px;
+    margin-top: 8px;
     margin-left: -60px;
   }
 
   .toggled_menu select {
     width: 90px;
+    font-size: 12px;
+  }
+
+  .toggled_menu svg {
+    width: 20px;
   }
 
   .nav_of_toggled_menu svg {
@@ -566,7 +586,7 @@ ul li {
     margin-top: 200px;
   }
 
-  
+
 
   .toggled_menu .telephone {
     font-size: 15px;
@@ -574,11 +594,6 @@ ul li {
 
   .toggled_menu .call_back {
     height: 130%;
-  }
-
-   svg {
-    width: 30px;
-    height: 30px;
   }
 }
 </style>

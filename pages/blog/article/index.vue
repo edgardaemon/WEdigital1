@@ -89,6 +89,17 @@ section{
 }
 
 .main_page h1 {
+    margin-top: 150px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 117px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 34px rgba(0, 0, 0, 0.65);
     position: absolute;
     top: 125px;
 }
@@ -141,7 +152,7 @@ section{
   }
 
 
-  section h1 {
+  section .main_page h1 {
     margin-top: 180px; 
     font-size: 70px;
   }
@@ -157,13 +168,13 @@ section{
 }
 @media screen and (max-width: 767px) {
 
-  section h1 {
+  section .main_page h1 {
     margin-top: 140px;
-    line-height: 40px;
+    line-height: 70px;
   }
   
 
- section h1 {
+ section .main_page h1 {
     margin-top: 100px;
     font-size: 43px;
   }
@@ -182,7 +193,9 @@ section{
   }
 
 
-  section h1 {
+  section .main_page h1 {
+      font-size: 25px!important;
+      line-height: 40px;
     margin-top: 70px; 
     font-size: 33px;
   }

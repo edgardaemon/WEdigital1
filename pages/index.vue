@@ -4,6 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text">
+           <!-- <h1>{{$t("home")}}</h1> -->
            <h1>Делаем жизнь наших клиентов проще</h1>
            <h3>We.Digital - маркетинговое агенство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы.</h3>
           </div>
@@ -15,7 +16,7 @@
         <div class="row">
           <div class="col-12 d-flex justify-content-between">
             <div>
-              <NuxtLink to="/about-us">
+              <NuxtLink to="about-us">
                 <div>
                 <img src="@/assets/images/about.svg" alt="">
                 </div>
@@ -46,7 +47,7 @@
             </div>
           </div>
           <div class="col-12">
-            <h1>ПОЧЕМУ МЫ?</h1>
+            <h1 class="why_us">ПОЧЕМУ МЫ?</h1>
           </div>
           <div class="col-12 col-md-6">
             <p class="text text-left">
@@ -206,7 +207,7 @@
         </div>
         <div class="row align-items-center">
           <div class="col-12 col-md-5">
-            <p class="text">
+            <p class="text text-left">
               We.Digital - это агентство, состоящее из специалистов в сфере
               диджитал маркетинга с 10-летним опытом работы. Нам важно, с кем мы
               работаем, важно, какие у всех нас цели и принципы . Мы не просто
@@ -220,7 +221,8 @@
               vel. Quis risus pellentesque vel, volutpat.
             </p>
           </div>
-          <div class="col-12 col-md-7 half-page-slider">
+          <div class="offset-md-1"></div>
+          <div class="col-12 col-md-6 half-page-slider">
             <div class="container">
             <half-slider/>
             </div>
@@ -298,7 +300,10 @@ body {
   color: white;
   background: #141414 !important;
   font-family: "Montserrat";
+  
 }
+
+
 
 .home_page h1 {
   font-style: normal;
@@ -337,6 +342,8 @@ a h2 {
   font-size: 32px;
   line-height: 39px;
   color: #ffffff;
+  transition: all 0.4s;
+
 }
 
 a h2:hover {
@@ -346,15 +353,19 @@ a h2:hover {
 
 a h2:hover svg path {
   fill: #811b7f;
+  transition: all 0.4s;
+
 }
 
 a h2:hover svg path {
   fill: #811b7f;
   stroke: #811b7f;
+  
 }
 
 a:hover {
   text-decoration: none;
+  
 }
 
 .about {
@@ -364,6 +375,7 @@ a:hover {
 
 .portfolio {
   padding-top: 64px;
+  transition: all 0.4s;
 }
 
 .services {
@@ -480,6 +492,10 @@ font-size: 20px;
 
 @media screen and (max-width: 991px) {
 
+.why_us {
+  font-size: 60px!important;
+}
+
 .home_page {
    height: 70vh;
  }
@@ -518,6 +534,9 @@ font-size: 20px;
 
 @media screen and (max-width: 767px) {
 
+.why_us {
+  font-size: 45px!important;
+}
 
 .home_page {
   height: 50vh;
@@ -556,7 +575,9 @@ font-size: 20px;
 }
 
 @media screen and (max-width: 576px) {
-
+.why_us {
+  font-size: 25px!important;
+}
 
   .home_page h1 {
   font-size: 28px;
@@ -570,7 +591,7 @@ font-size: 20px;
   }
 
   .home_page {
-    height: 28vh;
+    height: 40vh;
   }
 
   .about h1 {

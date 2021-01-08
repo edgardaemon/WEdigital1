@@ -37,7 +37,7 @@
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .slider {
     padding-top: 100px;
 }
@@ -63,6 +63,15 @@ p {
 
  .done {
     margin-top: 50px;
+
+
+    h2 {
+      font-style: normal;
+    font-weight: 750;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    }
 }
 
 @media screen and (max-width: 991px) {

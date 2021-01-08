@@ -36,6 +36,8 @@
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 4px;
+  transition: all 0.4s;
+
 }
 
  button:hover  {
