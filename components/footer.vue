@@ -483,7 +483,9 @@ p {
 }
 
 
-
+.uic {
+  display: none;
+}
  
 }
 

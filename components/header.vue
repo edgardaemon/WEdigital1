@@ -319,7 +319,7 @@ function scroolBoxShadow() {
   background: #141414 !important;
   transition: 0.5s all;
   position: fixed;
-  z-index: 19;
+  z-index: 200;
   width: 100%;
   background: #141414;
 filter: drop-shadow(0px 4px 32px rgba(255, 255, 255, 0.04));
@@ -493,7 +493,7 @@ ul li {
 /* ANIMATION */
 
 .menu {
-  z-index: 20;
+  z-index: 500;
   position: fixed;
   transition: 0.5s all;
   backdrop-filter: blur(30px);

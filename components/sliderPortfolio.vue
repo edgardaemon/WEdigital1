@@ -67,6 +67,7 @@ export default {
     return {
       settings: {
   "arrows": false,
+  "dots" : false,
   "infinite": true,
   "slidesToShow": 3,
   "slidesToScroll": 1,
@@ -94,7 +95,6 @@ export default {
         "infinite": true,
          "focusOnSelect": true,
    "centerMode": true,
-        "dots": true
       }
     },
     {
@@ -129,11 +129,14 @@ export default {
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 section {
   height: 100%;
+  
+
 }
+
 
 
 .non-active h2 {
@@ -219,7 +222,7 @@ span {
     margin-top: 64px;
     font-style: normal;
     font-weight: 400;
-    /* font-size: 24px; */
+    font-size: 24px;
     line-height: 155.9%;
     text-align: justify;
     color: #FFFFFF;
@@ -237,22 +240,26 @@ span {
 }
 
 @media screen and (max-width: 992px) {
-  h2 {
-  font-size: 14px !important;
-}
-
-.slick-current .wrapper {
-  transform: scale(1.6);
-  width: 100%;
-  height: 256px;
-  opacity: 1;
-}
 
 .non-active img{
   width: 100%;
   height: auto;
   padding-left: 0px;
 }
+
+.slick-current .wrapper {
+  transform: scale(1.6);
+  width: 100%;
+  height: 350px;
+  opacity: 1;
+}
+
+h2 {
+  box-sizing: border-box;
+  margin-left: 50px !important;
+  font-size: 24px !important;
+}
+
 }
 
 
@@ -266,13 +273,11 @@ span {
 }
 
 .non-active img{
-  width: 100%;
-  height: auto;
   padding-left: 50px;
 }
 h2 {
   margin-left: 120px !important;
-  font-size: 25px !important;
+  font-size: 36px !important;
 }
 
 .slider_portfolio {
@@ -291,15 +296,20 @@ h2 {
 
 
 @media screen and (max-width: 576px) {
+.slider_portfolio{
+  margin-top: 30px;
+}
+
+  
 h2 {
-  font-size: 15px !important;
-  margin-left: 60px !important;
+  font-size: 30px !important;
+  margin-left: 65px !important;
 }
 
 .slick-current .wrapper {
   transform: scale(1.2);
   width: 100%;
-  height: 300px;
+  height: 350px;
   opacity: 1;
 }
 
@@ -311,6 +321,19 @@ h2 {
   width: 100%;
   height: auto;
   padding-left: 20px;
+}
+}
+
+@media screen and (max-width: 462px) {
+
+  
+h2 {
+  font-size: 20px !important;
+  margin-left: 65px !important;
+}
+
+.slick-current .wrapper {
+  height: 200px;
 }
 }
 
