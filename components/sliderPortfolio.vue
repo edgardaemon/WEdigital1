@@ -328,7 +328,7 @@ h2 {
 
   
 h2 {
-  font-size: 20px !important;
+  font-size: 15px !important;
   margin-left: 65px !important;
 }
 
