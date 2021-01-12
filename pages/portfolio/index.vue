@@ -59,7 +59,7 @@
           <div class="row">
             <div class="offset-md-1"></div>
             <div class="col-12 col-md-6">
-              <p>
+              <p style="margin-left: 13px;">
                 We.Digital - это агентство, состоящее из специалистов в сфере
                 диджитал маркетинга с 10-летним опытом работы.
               </p>

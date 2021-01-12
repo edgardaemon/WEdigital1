@@ -55,6 +55,9 @@
                         <label class="tel_and_purpose" for="purpose">Ваша цель обращения в агентство</label>
                         <textarea name="purpose" placeholder="Какую проблему вы хотите чтобы мы решили?" autocomplete="off" id="" cols="30" rows="8"></textarea>
                      </div>
+                     <div class="col-12 text-right">
+                         <button>Отправить</button>
+                     </div>
                 </div>
             </form>
         </div>
@@ -64,7 +67,7 @@
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
 
 .main {
@@ -88,10 +91,32 @@
     color: #FFFFFF;
     opacity: 0.5;
     margin-bottom: 120px;
+    font-weight: 300;
 }
 
 form {
     margin-top: 64px;
+
+    button {
+        width: 384px;
+        height: 64px;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 32px;
+        transition: 0.5s all;
+
+        &:hover {
+        background: #81007F;
+        
+        }
+    }
 }
 
 form label {
@@ -158,7 +183,12 @@ form textarea::placeholder {
     text-align: center;
 }
 
-
+form {
+    button {
+        width: 300px;
+        height: 60px;
+    }
+}
 
 
 h2 {
@@ -180,6 +210,17 @@ form input::placeholder {
 }
 
 @media screen and (max-width: 768px) {
+
+form {
+    button {
+        font-size: 19px;
+        margin-top: 124px;
+        width: 160px;
+        height: 46px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+}
 
 .main {
     padding-top: 120px;
@@ -241,6 +282,17 @@ form textarea {
     font-size: 12px;
     font-weight: 500;
     text-align: center;
+}
+
+form {
+    button {
+        font-size: 9px;
+          margin-top: 112px;
+    width: 73px;
+    height: 33px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
 }
 
 .contacts p {

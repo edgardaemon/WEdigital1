@@ -1,8 +1,9 @@
 <template>
   <div>
     <div
-      class="menu"
+      class="menu" 
       :class="{ sidebarActive: sidebar }"
+      
     >
       <div class="container">
         <div class="toggled_menu">
@@ -311,7 +312,8 @@ function scroolBoxShadow() {
 }
 
 .menu {
-  min-height: 500px;
+
+  overflow: auto !important;
 
 }
 
@@ -509,6 +511,7 @@ ul li {
 }
 
 .sidebarActive {
+  overflow: auto !important;
   transform: translateX(0%);
 }
 

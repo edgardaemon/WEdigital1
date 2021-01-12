@@ -66,6 +66,11 @@ export default {
   user-select: none;
   border-bottom: 2px solid #353535;
 
+ &:hover {
+    -webkit-text-stroke: 0.3px white;
+    -webkit-text-fill-color: transparent;
+  }
+
   &__header {
     display: flex;
     align-items: center;
@@ -103,15 +108,11 @@ export default {
   line-height: 155.9%;
   color: #FFFFFF;
 
-  &:hover {
-    -webkit-text-stroke: 0.5px white;
-    -webkit-text-fill-color: transparent;
-  }
+ 
   }
 
   &__body {
     background: #141414;
-    padding: 25px 30px;
     display: none;
     margin-top: 16px;
     
@@ -120,17 +121,19 @@ export default {
     }
 
     ul {
+      padding-left: 0;
       li {
         color: #ffffff;
-        font-size: 22px;
+        font-size: 24px;
+        font-weight: 500;
         position: relative;
         display: flex;
         align-items: center;
         &::before {
           content: '';
-          min-width: 10px;
-          height: 10px;
-          background: #81007F;
+          min-width: 5px;
+          height: 5px;
+          background: #ffffff;
           border-radius: 50%;
           margin-right: 15px;
         }
