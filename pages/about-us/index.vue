@@ -56,7 +56,7 @@ body {
 }
 
 img{
- margin-top: 197px;
+ margin-top: 230px;
   margin-bottom: 0px;
 }
 

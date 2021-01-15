@@ -114,7 +114,7 @@ body {
 }
 
 .services {
-    padding-top: 230px;
+    padding-top: 230px !important;
     padding-bottom: 64px;
 }
 

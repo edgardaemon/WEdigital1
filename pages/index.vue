@@ -67,34 +67,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid number_of_projects">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-3 done_projects">
-              <h2 class="text-center">201</h2>
-              <h6>Успешных проектов</h6>
-            </div>
-            <div class="col-3 done_projects">
-              <h2 class="text-center">42</h2>
-              <h6>Клиентов в сфере SMM</h6>
-            </div>
-            <div class="col-3 done_projects">
-              <h2 class="text-center">10</h2>
-              <h6>Лого & Брендинг</h6>
-            </div>
-            <div class="col-3 done_projects">
-              <h2 class="text-center">24</h2>
-              <h6>Сайты и порталы</h6>
-            </div>
-          </div>
-          <div class="col-12 ">
-            <div class="d-flex flex-column align-items-center">
-              <h6>Мы делаем уникальные работы</h6>
-              <div class="line"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <counter />
     </section>
     <div class="container">
     <slider-partners />
@@ -287,6 +260,8 @@ import sliderPartners from "~/components/sliderPartners";
 import sliderPortfolio from '@/components/sliderPortfolio';
 import servicesAccordion from '@/components/servicesAccordion';
 import halfSlider from '@/components/halfSlider';
+import counter from '@/components/counter';
+
 
 
 
