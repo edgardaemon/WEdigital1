@@ -215,13 +215,13 @@
              <img src="@/assets/images/logo_header.svg" class="img-fluid" alt=""> 
             </NuxtLink>
           </div>
-          <div class="text_links">
+          <div class="navbar text_links">
             <ul class="d-flex">
-              <li><NuxtLink to="/about-us"> О нас </NuxtLink></li>
-              <li><NuxtLink to="/services"> Услуги </NuxtLink></li>
-              <li><NuxtLink to="/portfolio">Портфолио </NuxtLink></li>
-              <li><NuxtLink to="/team"> Команда </NuxtLink></li>
-              <li><NuxtLink to="/blog">Блог </NuxtLink></li>
+              <li><NuxtLink to="/about-us" class="navlink active"> О нас </NuxtLink></li>
+              <li><NuxtLink to="/services" class="navlink"> Услуги </NuxtLink></li>
+              <li><NuxtLink to="/portfolio" class="navlink">Портфолио </NuxtLink></li>
+              <li><NuxtLink to="/team" class="navlink"> Команда </NuxtLink></li>
+              <li><NuxtLink to="/blog" class="navlink">Блог </NuxtLink></li>
             </ul>
           </div>
           <div>
@@ -301,6 +301,8 @@ function scroolBoxShadow() {
         document.getElementById("top_menu").classList.toggle = "";
     }
 }
+
+
 </script>
 
 
@@ -317,6 +319,11 @@ function scroolBoxShadow() {
 
 }
 
+.nuxt-link-active {
+background: linear-gradient(358.84deg, rgba(129, 0, 127, 0.5) -2.51%, rgba(129, 0, 127, 0) 84.75%);
+border-bottom: 2px solid #81007F;
+}
+
 .top_menu-box-shadow {
   background: #141414 !important;
   transition: 0.5s all;
@@ -326,6 +333,7 @@ function scroolBoxShadow() {
   background: #141414;
 filter: drop-shadow(0px 4px 32px rgba(255, 255, 255, 0.04));
 }
+
 
 
 

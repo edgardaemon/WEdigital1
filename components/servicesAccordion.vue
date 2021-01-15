@@ -66,7 +66,7 @@ export default {
   user-select: none;
   border-bottom: 2px solid #353535;
 
- &:hover {
+ &:hover .accordion__title {
     -webkit-text-stroke: 0.3px white;
     -webkit-text-fill-color: transparent;
   }
