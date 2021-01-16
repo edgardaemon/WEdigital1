@@ -310,7 +310,8 @@
 export default {
   methods: {
 setLang(value) {
-this.switchLocalePath("uz");
+  console.log(value);
+this.switchLocalePath(value);
 }
 },
   data: () => ({

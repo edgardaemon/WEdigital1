@@ -1154,7 +1154,12 @@
     </div>
   </div>
 </template>
-
+<script>
+export default {
+  scrollToTop: true,
+  
+}
+</script>
 <style lang="scss" scoped>
 .our_team {
   padding-top: 230px;

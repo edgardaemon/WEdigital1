@@ -80,7 +80,13 @@
     <buttons />
   </div>
 </template>
+<script>
+export default {
+  
+  scrollToTop: true,
 
+}
+</script>
 <style lang="scss" scoped>
 .slider {
   padding-top: 100px;

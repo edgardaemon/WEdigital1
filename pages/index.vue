@@ -194,6 +194,7 @@
 
 <script>
 export default {
+  scrollToTop: true,
  data: () => ({
     courses: [
       {
