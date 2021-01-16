@@ -4,9 +4,9 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text">
-           <!-- <h1>{{$t("home")}}</h1> -->
-           <h1>Делаем жизнь наших клиентов проще</h1>
-           <h3>We.Digital - маркетинговое агенство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы.</h3>
+           <h1>{{$t("home")}}</h1>
+           <!-- <h1>Делаем жизнь наших клиентов проще</h1> -->
+           <h3>{{$t("company_description")}}</h3>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
             <div>
               <NuxtLink to="/about-us">
                 <h2 class="more">
-                  Подробно&nbsp;
+                {{$t("more")}}&nbsp;
                   <svg
                     width="32"
                     height="32"
@@ -47,15 +47,11 @@
             </div>
           </div>
           <div class="col-12">
-            <h1 class="why_us">ПОЧЕМУ МЫ?</h1>
+            <h1 class="why_us"> {{$t("why_us")}}</h1>
           </div>
           <div class="col-12 col-md-6">
             <p class="text text-left">
-              We.Digital - это агентство, состоящее из специалистов в сфере
-              диджитал маркетинга с 10-летним опытом работы. Нам важно, с кем мы
-              работаем, важно, какие у всех нас цели и принципы. Мы не просто
-              делаем рекламу, мы создаем идею, которая отвечает на потребности
-              бизнеса и становится частью жизни потребителей.
+            {{$t("why_us_text")}}
             </p>
           </div>
           <div class="col-md-6 text-center">
@@ -82,7 +78,7 @@
             <div>
               <NuxtLink to="/portfolio">
                 <h2 class="more">
-                  Все проекты&nbsp;
+                 {{$t("all_projects")}}&nbsp;
                   <svg
                     width="32"
                     height="32"
@@ -112,7 +108,7 @@
         <div class="row">
           <div class="col-12 text-center d-flex flex-column align-items-center">
             <h5>
-              Это еще не все
+                {{$t("not_all")}}
              <img src="@/assets/images/hug_me.svg" alt="">
             </h5>
             <div class="line"></div>
@@ -130,7 +126,7 @@
             <div>
               <NuxtLink to="/services">
                 <h2 class="more">
-                  Все услуги&nbsp;
+                  {{$t("all_services")}}&nbsp;
                   <svg
                     width="32"
                     height="32"
@@ -180,18 +176,7 @@
         </div>
         <div class="row align-items-center">
           <div class="col-12 col-md-5">
-            <p class="text text-left">
-              We.Digital - это агентство, состоящее из специалистов в сфере
-              диджитал маркетинга с 10-летним опытом работы. Нам важно, с кем мы
-              работаем, важно, какие у всех нас цели и принципы . Мы не просто
-              делаем рекламу, мы создаем идею, которая отвечает на потребности
-              бизнеса и становится частью жизни потребителей.
-              <br /><br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              aliquet elit dignissim sit vitae commodo libero, feugiat eget.
-              Malesuada convallis phasellus aliquam arcu auctor felis. Imperdiet
-              feugiat facilisis dignissim justo consectetur. Erat sed in blandit
-              vel. Quis risus pellentesque vel, volutpat.
+            <p class="text text-left"  v-html="$t('team_description')">
             </p>
           </div>
           <div class="offset-md-1"></div>

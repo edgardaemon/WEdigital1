@@ -3,17 +3,20 @@
           <div class="row">
           <div class="col-12 text-center">
             <h5>
-              Интересно? Тогда свяжитесь с нами и воспользуйтесь нашими
-              услугами!
+               {{$t("interesting?")}}
             </h5>
           </div>
           <div class="offset-2"></div>
           <div class="col-4">
-            <NuxtLink to="/contacts"> <button>Контакты</button></NuxtLink>
+            <NuxtLink to="/contacts"> <button>
+               {{$t("contacts_button")}}
+              </button></NuxtLink>
           </div>
           <div class="col-4">
 
-           <NuxtLink to="/contacts"><button>Обратная связь</button></NuxtLink>
+           <NuxtLink to="/contacts"><button>
+               {{$t("call_back")}}
+             </button></NuxtLink>
           </div>
         </div>
         </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="slider_logos">
-      <span>Наши партнеры</span>
+      <span> {{$t("our_partners")}}</span>
       <img src="@/assets/images/gradient_left.png" class=" gradient_left " alt="">
     <VueSlickCarousel class="sliders" v-bind="settings">
        <div class="wrapper">

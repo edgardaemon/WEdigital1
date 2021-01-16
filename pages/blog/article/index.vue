@@ -4,7 +4,9 @@
         <div class="container main_page">
             <div class="row text-center justify-content-center">
             <img src="@/assets/images/article.png" class="img-fluid" alt="">
-            <h1>From concrete to <br> abstract</h1>
+            <h1  v-html="$t('blog_theme')">
+                
+            </h1>
             </div>
         </div>
          </section>
@@ -13,18 +15,8 @@
             <div class="offset-1">
             </div>
             <div class="col-10">
-                <p class="text">
-                    We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы.
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                      . Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                      <br><br>
-
-                    We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p class="text" v-html="$t('blog_text1')">
+                
                 </p>
             </div>
             </div>
@@ -39,18 +31,7 @@
               <div class="offset-1">
             </div>
             <div class="col-10">
-                <p class="text bordered">
-                    We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы.
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                      . Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                      <br><br>
-
-                    We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p class="text bordered" v-html="$t('blog_text2')">
                 </p>
                 <div class="socials d-flex justify-content-center">
                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -6,17 +6,16 @@
             </div>
             <div class="col-12 col-md-10 d-flex justify-content-between">
                 <div>
-                    <h6>Электронная почта</h6>
+                    <h6>{{$t("email")}}</h6>
                     <p class="text">info@wedigital.uz</p>
                 </div>
                 <div>
-                    <h6>Адрес</h6>
-                    <p class="text">
-                        город Ташкент, Мирзо <br> Улугбекский район, <br> улица Ziyolilar, 1-й дом
+                    <h6>{{$t("location")}}</h6>
+                    <p class="text" v-html="$t('address_contacts')" >
                     </p>
                 </div>
                 <div>
-                    <h6>Телефон</h6>
+                    <h6>{{$t("tel")}}</h6>
                     <p class="text">+998 99 987 65 43</p>
                 </div>
             </div>
@@ -31,32 +30,32 @@
             <form>
                 <div class="row">
                     <div class="col-12 d-flex flex-column ">
-                        <label for="name-of-company">Название Вашей компании</label>
+                        <label for="name-of-company">{{$t("name_of_your_company")}}</label>
                         <input type="text" id="name-of-company" autocomplete="none" placeholder="Компания">
                      </div>
                        <div class="col-6 d-flex flex-column">
-                        <label class="tel_and_purpose" for="addres-of-company">Адрес сайта компании</label>
+                        <label class="tel_and_purpose" for="addres-of-company">{{$t("site_of_company")}}</label>
                         <input type="text" id="addres-of-company" autocomplete="none" placeholder="example.uz">
                      </div>
                        <div class="col-6 d-flex flex-column ">
-                        <label class="tel_and_purpose" for="name-and-surname">Ваше имя и фамилия</label>
+                        <label class="tel_and_purpose" for="name-and-surname">{{$t("name_and_surname")}}</label>
                         <input type="text" id="name-and-surname" autocomplete="none" placeholder="Имя и фамилия">
                      </div>
                      <div class="col-6 d-flex flex-column">
-                        <label class="tel_and_purpose" for="links-of-socials">Ссылки на социальные сети компании</label>
+                        <label class="tel_and_purpose" for="links-of-socials">{{$t("socilals_of_company")}}</label>
                         <input type="text" id="name-and-surname" autocomplete="none" placeholder="Каждую ссылку на новой строкке">
                         
                      </div>
                        <div class="col-6 d-flex flex-column">
-                        <label class="tel_and_purpose" for="telephone">Контактный телефон</label>
+                        <label class="tel_and_purpose" for="telephone">{{$t("contact_tel")}}</label>
                         <input type="text" id="telephone" autocomplete="none" placeholder="+998 90 973 72 60">
                      </div>
                      <div  class="col-12 d-flex flex-column">
-                        <label class="tel_and_purpose" for="purpose">Ваша цель обращения в агентство</label>
+                        <label class="tel_and_purpose" for="purpose">{{$t("purpose")}}</label>
                         <textarea name="purpose" placeholder="Какую проблему вы хотите чтобы мы решили?" autocomplete="off" id="" cols="30" rows="8"></textarea>
                      </div>
                      <div class="col-12 text-right">
-                         <button>Отправить</button>
+                         <button>{{$t("send")}}</button>
                      </div>
                 </div>
             </form>

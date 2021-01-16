@@ -11,22 +11,14 @@
         <div class="row">
           <div class="offset-md-1"></div>
           <div class="col-12 col-md-10">
-            <h2>Задача</h2>
+            <h2>{{$t("task")}}</h2>
           </div>
         </div>
         <div class="row">
           <div class="offset-md-1"></div>
           <div class="col-12 col-md-10">
             <p class="text1 text-left">
-              We.Digital - это агентство, состоящее из специалистов в сфере
-              диджитал маркетинга с 10-летним опытом работы. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+              {{$t("task_description")}}
             </p>
             <img src="@/assets/images/task.png" class="img-fluid" alt="" />
             <span>Photo by: Lorem ipsum dolor sit amet</span>
@@ -35,17 +27,9 @@
         <div class="row">
           <div class="offset-md-1"></div>
           <div class="col-12 col-md-10">
-            <h2>Решение</h2>
+            <h2>{{$t("solution")}}</h2>
             <p class="text1 text-left">
-              We.Digital - это агентство, состоящее из специалистов в сфере
-              диджитал маркетинга с 10-летним опытом работы. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+           {{$t("solution_description")}}
             </p>
             <img src="@/assets/images/task.png" class="img-fluid" alt="" />
             <span>Photo by: Lorem ipsum dolor sit amet</span>
@@ -54,14 +38,13 @@
         <div class="row">
           <div class="offset-md-1"></div>
           <div class="col-12 col-md-10">
-            <h2>Результаты</h2>
+            <h2>{{$t("results")}}</h2>
           </div>
           <div class="row">
             <div class="offset-md-1"></div>
             <div class="col-12 col-md-6">
               <p style="margin-left: 13px;">
-                We.Digital - это агентство, состоящее из специалистов в сфере
-                диджитал маркетинга с 10-летним опытом работы.
+              {{$t("results_description")}}
               </p>
             </div>
           </div>
@@ -70,25 +53,25 @@
           <div class="offset-md-1"></div>
           <div class="col-4 col-md-3">
             <h1>+6%</h1>
-            <p>Amet ipsum dolor</p>
+            <p> {{$t("increase1")}}
+            </p>
           </div>
           <div class="offset-md-1"></div>
           <div class="col-4 col-md-3">
             <h1>+7%</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <p>{{$t("increase2")}}</p>
           </div>
           <div class="offset-md-1"></div>
           <div class="col-4 col-md-3">
             <h1>3x</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur</p>
+            <p>{{$t("increase3")}}</p>
           </div>
         </div>
         <div class="row">
           <div class="offset-md-1"></div>
           <div class="col-12 col-md-6">
             <p>
-              We.Digital - это агентство, состоящее из специалистов в сфере
-              диджитал маркетинга с 10-летним опытом работы.
+              {{$t("increase_description")}}
             </p>
           </div>
         </div>

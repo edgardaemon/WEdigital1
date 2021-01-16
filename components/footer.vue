@@ -11,8 +11,7 @@
       
         <div class=" col-md-3 address">
           <p class="text">
-            г.Ташкент, Мирзо-Улугбекский район, 
-            улица Зиёлилар, 1
+           {{$t("address")}}
           </p>
           <p>
             <strong> +998 99 987 65 43 </strong>

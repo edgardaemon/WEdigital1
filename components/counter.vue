@@ -9,7 +9,7 @@
             :duration="duration"
             :delay="delay"
           /></h2>
-          <h6>Успешных проектов</h6>
+          <h6>{{$t("succed_projects")}}</h6>
         </div>
         <div class="col-3 done_projects">
           <h2><animated-number
@@ -19,7 +19,7 @@
             :delay="delay"
           /></h2>
 
-          <h6>Клиентов в сфере SMM</h6>
+          <h6>{{$t("clients")}}</h6>
         </div>
         <div class="col-3 done_projects">
           <h2><animated-number
@@ -29,7 +29,7 @@
             :delay="delay"
           /></h2>
 
-          <h6>Лого & Брендинг</h6>
+          <h6>{{$t("logo_and_branding")}}</h6>
         </div>
         <div class="col-3 done_projects">
           <h2><animated-number
@@ -39,12 +39,12 @@
             :delay="delay"
           /></h2>
 
-          <h6>Сайты и порталы</h6>
+          <h6>{{$t("sites")}}</h6>
         </div>
       </div>
       <div class="col-12">
         <div class="d-flex flex-column align-items-center">
-          <h6>Мы делаем уникальные работы</h6>
+          <h6>{{$t("we_do_unique_tasks")}}</h6>
           <div class="line"></div>
         </div>
       </div>

@@ -31,16 +31,15 @@
                   </clipPath>
                 </defs>
               </svg>
-
-              <select name="languages" id="languages" >
-                <option value="Русский">Русский</option>
+              <select name="languages" id="languages" @input="setLang">
+                <option value="Русский" >Русский</option>
                 <option value="O‘zbekcha">O‘zbekcha</option>
                 <option value="English">English</option>
               </select>
             </div>
-            <div>
+            <div class="logo">
               <NuxtLink to="/" >
-               <img src="@/assets/images/logo_toggled.svg"  @click="sidebar = false" alt="">
+               <img src="@/assets/images/logo_toggled.svg"   @click="sidebar = false" alt="">
               </NuxtLink>
             </div>
             <div>
@@ -69,27 +68,27 @@
           </div>
           <div class="row">
             <div class="col-12 text-right">
-              <NuxtLink to="/about-us"> <h1 @click="sidebar = false">О НАС</h1></NuxtLink>
-              <NuxtLink to="/services"> <h1  @click="sidebar = false">УСЛУГИ</h1></NuxtLink>
-              <NuxtLink to="/portfolio"> <h1  @click="sidebar = false">ПОРТФОЛИО</h1></NuxtLink>
-              <NuxtLink to="/team"> <h1  @click="sidebar = false">КОМАНДА</h1></NuxtLink>
+              <NuxtLink to="/about-us"> <h1 @click="sidebar = false">{{$t("navlink1")}}</h1></NuxtLink>
+              <NuxtLink to="/services"> <h1  @click="sidebar = false">{{$t("navlink2")}}</h1></NuxtLink>
+              <NuxtLink to="/portfolio"> <h1  @click="sidebar = false">{{$t("navlink3")}}</h1></NuxtLink>
+              <NuxtLink to="/team"> <h1  @click="sidebar = false">{{$t("navlink4")}}</h1></NuxtLink>
             </div>
           </div>
           <div class="row">
             <div class="col-5">
-              <p class="text">г.Ташкент, Мирзо-Улугбекский район, улица Зиёлилар, 1</p>
+              <p class="text">{{$t("address")}}</p>
               <p class="telephone">
                 <strong> +998 99 987 65 43 </strong>
               </p>
             </div>
             <div class="col-7 text-right">
-              <NuxtLink to="/blog"> <h1  @click="sidebar = false">БЛОГ</h1></NuxtLink>
+              <NuxtLink to="/blog"> <h1  @click="sidebar = false">{{$t("navlink5")}}</h1></NuxtLink>
             </div>
           </div>
           <div class="row justify-content-between toggled_menu_footer">
             <div>
               <NuxtLink to="/contacts">
-                <button class="call_back"  @click="sidebar = false">Обратная связь</button></NuxtLink
+                <button class="call_back"  @click="sidebar = false">{{$t("call_back")}}</button></NuxtLink
               >
             </div>
             <div>
@@ -217,11 +216,11 @@
           </div>
           <div class="navbar text_links">
             <ul class="d-flex">
-              <li><NuxtLink to="/about-us" class="navlink active"> О нас </NuxtLink></li>
-              <li><NuxtLink to="/services" class="navlink"> Услуги </NuxtLink></li>
-              <li><NuxtLink to="/portfolio" class="navlink">Портфолио </NuxtLink></li>
-              <li><NuxtLink to="/team" class="navlink"> Команда </NuxtLink></li>
-              <li><NuxtLink to="/blog" class="navlink">Блог </NuxtLink></li>
+              <li><NuxtLink to="/about-us" class="navlink active">{{$t("navlink1")}} </NuxtLink></li>
+              <li><NuxtLink to="/services" class="navlink">{{$t("navlink2")}}</NuxtLink></li>
+              <li><NuxtLink to="/portfolio" class="navlink">{{$t("navlink3")}} </NuxtLink></li>
+              <li><NuxtLink to="/team" class="navlink"> {{$t("navlink4")}} </NuxtLink></li>
+              <li><NuxtLink to="/blog" class="navlink">{{$t("navlink5")}} </NuxtLink></li>
             </ul>
           </div>
           <div>
@@ -250,11 +249,34 @@
                   </defs>
                 </svg>
 
-                &nbsp;<select name="languages" id="languages">
-                  <option value="Русский">Русский</option>
-                  <option value="O‘zbekcha">O‘zbekcha</option>
-                  <option value="English">English</option>
-                </select>
+                &nbsp;
+                <!-- <div class="lang">
+          <a id="ru" class="language current_lang" href="#">
+            <nuxt-link
+              :to="switchLocalePath('ru')">
+              Русский
+            </nuxt-link>
+          </a>
+          <a id="uz" class="language current_lang" href="#">
+            <nuxt-link
+              :to="switchLocalePath('uz')">
+              O'zbekcha
+            </nuxt-link>
+          </a>
+          <a id="eng" class="language current_lang" href="#">
+            <nuxt-link
+              :to="switchLocalePath('en')">
+              English
+            </nuxt-link>
+          </a>
+        </div> -->
+
+        <select name="" @input="setLang" id="">
+          <option value="uz">Uzbek</option>
+          <option value="ru">rus</option>
+          <option value="en">English</option>
+
+        </select>
               </li>
             </ul>
           </div>
@@ -286,10 +308,16 @@
 
 <script>
 export default {
+  methods: {
+setLang(value) {
+this.switchLocalePath("uz");
+}
+},
   data: () => ({
     sidebar: false,
   }),
 };
+
 
 window.onscroll = function() {scroolBoxShadow()};
 
@@ -335,6 +363,10 @@ filter: drop-shadow(0px 4px 32px rgba(255, 255, 255, 0.04));
 }
 
 
+.logo a{
+  background: none !important;
+  border-bottom: none !important;
+}
 
 
 .top_menu {
@@ -394,16 +426,15 @@ ul li {
 }
 
 .navbar {
-  padding: 1%;
   transition: 0.4s all;
 }
 
 .text_links {
-  padding-top: 12px;
+  padding-top: 21px;
 }
 
 .tel {
-  padding-top: 12px;
+  padding-top: 17px;
 }
 
 .tel svg {

@@ -1,5 +1,83 @@
 {
-    "home": "Uy"
+    "navlink1" : "Biz Haqimizda",
+    "navlink2" : "Xizmatlar",
+    "navlink3" : "Portfolio",
+    "navlink4" : "Jamoa",
+    "navlink5" : "Blog",
+    "home": "Uy",
+    "company_description": "12321312",
+    "more" : "Batafsil",
+    "address" : "toshkent shahar...",
+    "why_us" : "nimaga biz?",
+    "why_us_text" : "аем идею, которая отвечает на потребности бизнеса и становится частью жизни потребителей.",
+    "succed_projects": "Успешных проектов112",
+    "clients" : "Клиентов в сфере SMM312",
+    "logo_and_branding": "Лого & Брендинг123",
+    "sites":"Сайты и порталы12312",
+    "we_do_unique_tasks" : "Мы делаем уникальные работы312312",
+    "our_partners" : "hamkorlar",
+    "call_back" : "asdasd",
+    "all_projects" : "hamma proyektlar",
+    "all_services" : "hammasi",
+    "not_all" : "Это еще не все",
+    "team_description" : "asdasda",
+    "interesting?" : "asd",
+    "contacts_button" : "123",
+
+    "portfolio_text1" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
+    "portfolio_text2" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laboru",
+    "SMM" : "МАРКЕТИНГ В СОЦИАЛЬНЫХ СЕТЯХ",
+    "text_services1" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Нам важно, с кем мы работаем, важно, какие у всех нас цели и принципы. Мы не просто делаем рекламу, мы создаем идею, которая отвечает на потребности бизнеса и становится частью жизни потребителей.",
+    "ad_companies" : "РАЗРАБОТКА РЕКЛАМНЫХ КОМПАНИИЙ",
+    "text_services2" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Нам важно, с кем мы работаем, важно, какие у всех нас цели и принципы. Мы не просто делаем рекламу, мы создаем идею, которая отвечает на потребности бизнеса и становится частью жизни потребителей.",
+    "marketing_research" : "МАРКЕТИНГОВЫЕ ИССЛЕДОВАНИЯ",
+    "text_services3" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Нам важно, с кем мы работаем, важно, какие у всех нас цели и принципы. Мы не просто делаем рекламу, мы создаем идею, которая отвечает на потребности бизнеса и становится частью жизни потребителей.",
+    "branding_and_design" : "БРЕНДИНГ И ДИЗАЙН",
+    "text_services4" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Нам важно, с кем мы работаем, важно, какие у всех нас цели и принципы. Мы не просто делаем рекламу, мы создаем идею, которая отвечает на потребности бизнеса и становится частью жизни потребителей.",
+    "influince_marketing" : "INFLUENCE MARKETING",
+    "text_services5" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Нам важно, с кем мы работаем, важно, какие у всех нас цели и принципы. Мы не просто делаем рекламу, мы создаем идею, которая отвечает на потребности бизнеса и становится частью жизни потребителей.",
+    "production" : "PRODUCTION",
+    "text_services6" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Нам важно, с кем мы работаем, важно, какие у всех нас цели и принципы. Мы не просто делаем рекламу, мы создаем идею, которая отвечает на потребности бизнеса и становится частью жизни потребителей.",
+    "media_service" : "МЕДИА ОБСЛУЖИВАНИЕ",
+    "text_services7" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Нам важно, с кем мы работаем, важно, какие у всех нас цели и принципы. Мы не просто делаем рекламу, мы создаем идею, которая отвечает на потребности бизнеса и становится частью жизни потребителей.",
+    "coordination_of_work" : "КООРДИНАЦИЯ РАБОТЫ МАРКЕТИНГА НА АУТСОРС",
+    "text_services8" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Нам важно, с кем мы работаем, важно, какие у всех нас цели и принципы. Мы не просто делаем рекламу, мы создаем идею, которая отвечает на потребности бизнеса и становится частью жизни потребителей.",
+
+    "task" : "Задача",
+    "task_description" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "solution" : "Решение",
+    "solution_description" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "results" : "Результаты",
+     "results_description" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы.",
+     "increase1" : "Amet ipsum dolor", 
+     "increase2" : "Lorem ipsum dolor sit amet, consectetur",
+     "increase3" : "Lorem ipsum dolor sit amet, consectetur",
+     "increase_description" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы.",
+
+
+     "theme" : "Сейчас – не время для экспериментов",
+     "theme_description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor",
+
+     "blog_theme" : "FROM CONCRETE TO <br> ABSTRACT",
+     "blog_text1" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br> We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+     "blog_text2" : "We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>We.Digital - это агентство, состоящее из специалистов в сфере диджитал маркетинга с 10-летним опытом работы. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+
+
+     "email": "Электронная почта",
+     "location" : "Адрес",
+     "tel" : "Телефон",
+     "name_of_your_company": "Название Вашей компании",
+     "site_of_company" : "Адрес сайта компании",
+     "name_and_surname" : "Ваше имя и фамилия",
+     "socilals_of_company" : "Ссылки на социальные сети компании",
+     "contact_tel" : "Контактный телефон",
+     "purpose" : "Ваша цель обращения в агентство",
+     "send" : "Отправить"
+
+
+
+
 }
 
 
